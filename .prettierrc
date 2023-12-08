@@ -1,0 +1,16 @@
+{
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.html", "*.scss", "*.js"],
+      "options": {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 100,
+        "quoteProps": "as-needed",
+        "arrowParens": "avoid",
+        "useTabs": true
+      }
+    }
+  ]
+}
