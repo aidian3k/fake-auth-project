@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { BasicPathOutlet } from "./components/BasicPathOutlet";
 import { ProtectedPath } from "./components/ProtectedPath";
 import { LoginPage } from "./components/LoginPage";
@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path={""} element={<Navigate to={"/main"} />}></Route>
         <Route path={"/"} element={<BasicPathOutlet />}>
           <Route path={"main"} element={<MainPage />}></Route>
           <Route path={"private"} element={<ProtectedPath />}>

@@ -16,7 +16,7 @@ export const BasicPathOutlet: FC = () => {
   useEffect(() => {}, [logoutAction]);
 
   function basicLinkStyling() {
-    return "block bg-blue-700 rounded md:bg-transparent text-blue-700 sp-0 md:dark:text-blue-500";
+    return "block rounded md:bg-transparent text-blue-500 sp-0";
   }
 
   return (
